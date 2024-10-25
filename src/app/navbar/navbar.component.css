@@ -1,0 +1,13 @@
+.numberitem {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
