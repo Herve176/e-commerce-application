@@ -12,11 +12,12 @@ import { Output, EventEmitter } from '@angular/core';
   styleUrl: './articles.component.css'
 })
 export class ArticlesComponent {
-
-  @Output()Itemadded= new EventEmitter<number>();
   value:number=0;
-  addnewItem(value:number){
-    return  this.Itemadded.emit(value+1);
+  @Output()Itemadded= new EventEmitter<number>();
+
+  addnewItem(){
+      this.value++;
+      this.Itemadded.emit(this.value);
 
   }
 }

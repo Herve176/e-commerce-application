@@ -13,7 +13,6 @@ export class NavbarComponent {
   items: number=0;
   addItem($event: number) {
     this.items=$event;
-    console.log(this.items);
     return(this.items);
     }
 }
